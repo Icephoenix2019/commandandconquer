@@ -356,7 +356,7 @@
           "orders":{
             "type":"guard"
           },
-          "direction":0
+          "direction":4
         },
         {
           "player":"BadGuy",
@@ -377,6 +377,18 @@
           "orders":{
             "type":"guard"
           },
+          "direction":4
+        },
+        {
+          "player":"Neutral",
+          "team":"civilian",
+          "name":"civilian-10",
+          "y":5,
+          "x":16,
+          "orders":{
+            "type":"sticky"
+          },
+          "uid":-1,
           "direction":4
         },
             {"name":"minigunner","team":"nod","player":"BadGuy","x":30,"y":3},
