@@ -384,8 +384,7 @@
             {"name":"jeep","team":"gdi","player":"GoodGuy","x":32,"y":3.5,"direction":16}
         ],
         "buildings":[
-            {"name":"hand-of-nod","team":"nod","player":"BadGuy","x":3,"y":2},
-            {"name":"power-plant","team":"nod","player":"BadGuy","x":0,"y":2},
+            {"name":"hand-of-nod","team":"nod","player":"BadGuy","x":0,"y":2},
             {"name":"civilian-building-26","player":"Neutral","x":0,"y":7},
             {"name":"civilian-building-26","player":"Neutral","x":5,"y":7}
             ],
