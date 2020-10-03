@@ -5,7 +5,7 @@
     "player":"BadGuy",
     "cash" :{
         "GoodGuy":0,
-        "BadGuy":1000
+        "BadGuy":1500
     },
     "videos" : {
       "briefing":"nod/nod1"
@@ -384,8 +384,8 @@
             {"name":"jeep","team":"gdi","player":"GoodGuy","x":3,"y":3,"direction":16}
         ],
         "buildings":[
-            {"name":"hand-of-nod","player":"BadGuy","x":3,"y":2},
-            {"name":"power-plant","player":"BadGuy","x":0,"y":2},
+            {"name":"hand-of-nod","team":"nod","player":"BadGuy","x":3,"y":2},
+            {"name":"power-plant","team":"nod","player":"BadGuy","x":0,"y":2},
             {"name":"civilian-building-26","player":"Neutral","x":0,"y":7},
             {"name":"civilian-building-26","player":"Neutral","x":5,"y":7}
             ],
