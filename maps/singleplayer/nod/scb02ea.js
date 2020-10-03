@@ -1,12 +1,11 @@
-// THIS IS THE NEW CAMPAIGN, EDITING IT IS FINE BUT GIVE CREDIT \\
 {
     "name":"scb02ea",
-    "briefing": "GDI has one more trick up their sleve, their units have re-entered the area in a effort to try and stop us. Show them no mercy.",
+    "briefing": "In order for the Brotherhood to gain a foothold, we must begin by \neliminating certain elements. Nikoomba, the nearby village's leader, \nis one such element. His views and ours do not coincide, and he \nmust be eliminated.",
     "team":"nod",
     "player":"BadGuy",
     "cash" :{
         "GoodGuy":0,
-        "BadGuy":2000
+        "BadGuy":1000
     },
     "videos" : {
       "briefing":"nod/nod1"
@@ -72,13 +71,12 @@
     },
     "requirements":{
         "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10"],
-        "buildings":["hand-of-nod", "power-plant"],
+        "buildings":["civilian-building-20","civilian-building-21","civilian-building-22","civilian-building-23","civilian-building-24","civilian-building-25","civilian-building-26","civilian-building-27","civilian-building-30"],
         "turrets":[],
         "vehicles":["buggy","jeep"],
         "trees":["desert-tree-08","desert-tree-18"]
     },
     "buildable":{
-        "infantry":["minigunner"],
     },
     "starting":{
         "trees":[
@@ -348,43 +346,22 @@
           "direction":0
         },
         {
-          "player":"BadGuy",
-          "team":"nod",
+          "player":"GoodGuy",
+          "team":"gdi",
           "name":"minigunner",
-          "y":2,
-          "x":8,
+          "y":19,
+          "x":36,
           "orders":{
             "type":"guard"
           },
-          "direction":4
-        },
-        {
-          "player":"BadGuy",
-          "team":"nod",
-          "name":"minigunner",
-          "y":2.5,
-          "x":8.5,
-          "orders":{
-            "type":"guard"
-          },
-          "direction":4
-        {
-          "player":"BadGuy",
-          "team":"nod",
-          "name":"minigunner",
-          "y":2.5,
-          "x":7.5,
-          "orders":{
-            "type":"guard"
-          },
-          "direction":4
+          "direction":0
         },
         {
           "player":"Neutral",
           "team":"civilian",
           "name":"civilian-10",
-          "y":5,
-          "x":16,
+          "y":2.5,
+          "x":8.5,
           "orders":{
             "type":"sticky"
           },
@@ -403,14 +380,16 @@
         "vehicles":[
             {"name":"buggy","team":"nod","player":"BadGuy","x":32,"y":2.5,"direction":16},
             {"name":"buggy","team":"nod","player":"BadGuy","x":33,"y":2.5,"direction":16},
-            {"name":"buggy","team":"nod","player":"BadGuy","x":34,"y":2.5,"direction":16},
-            {"name":"buggy","team":"nod","player":"BadGuy","x":31,"y":2.5,"direction":16},
             {"name":"jeep","team":"gdi","player":"GoodGuy","x":3,"y":3,"direction":16}
-            {"name":"jeep","team":"gdi","player":"GoodGuy","x":5,"y":5,"direction":16}
         ],
         "buildings":[
-            {"name":"hand-of-nod","player":"BadGuy","x":8,"y":7},
-            {"name":"power-plant","player":"BadGuy","x":8,"y":9},
+            {"name":"civilian-building-25","player":"Neutral","x":8,"y":7},
+            {"name":"civilian-building-21","player":"Neutral","x":8,"y":9},
+            {"name":"civilian-building-24","player":"Neutral","x":0,"y":2},
+            {"name":"civilian-building-24","player":"Neutral","x":0,"y":9},
+            {"name":"civilian-building-26","player":"Neutral","x":1,"y":9},
+            {"name":"civilian-building-26","player":"Neutral","x":0,"y":7},
+            {"name":"civilian-building-26","player":"Neutral","x":5,"y":7}
             ],
         "turrets":[],
         "ships":[],
