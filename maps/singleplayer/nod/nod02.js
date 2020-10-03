@@ -70,14 +70,14 @@
         ]
     },
     "requirements":{
-        "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10","bazooka"],
+        "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10"],
         "buildings":["civilian-building-20","civilian-building-21","civilian-building-22","civilian-building-23","civilian-building-24","civilian-building-25","civilian-building-26","civilian-building-27","civilian-building-30","power-plant","hand-of-nod"],
         "turrets":[],
         "vehicles":["buggy","jeep"],
         "trees":["desert-tree-08","desert-tree-18"]
     },
     "buildable":{
-        "infantry":["minigunner","bazooka"]
+        "infantry":["minigunner"]
     },
     "starting":{
         "trees":[
