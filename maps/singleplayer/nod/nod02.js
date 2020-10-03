@@ -395,13 +395,6 @@
              "action":"success"},
             {"name":"condition","condition":"(game.count(\"vehicles\",\"BadGuy\")==0 && game.count(\"infantry\",\"BadGuy\") == 0)",
              "action":"failure"},
-             {"name":"condition","condition":"(game.count(\"infantry\",\"GoodGuy\",-2)==0 && game.count(\"infantry\",\"GoodGuy\",-3)==0 && game.count(\"infantry\",\"GoodGuy\",-4)==0)",
-              "action":"hunt","player":"GoodGuy"},
-            {"name":"enter","region":{"x1":26,"y1":10,"x2":28,"y2":14},"player":"BadGuy",
-                "action":"add","items":[
-                  {"name":"minigunner","team":"gdi","player":"GoodGuy","type":"infantry","x":31.5,"y":25,"orders":{"type":"hunt","to":{"x":31,"y":15},"from":{"x":26,"y":10}}},
-                  {"name":"minigunner","team":"gdi","player":"GoodGuy","type":"infantry","x":32,"y":25,"orders":{"type":"hunt","to":{"x":32,"y":15},"from":{"x":26,"y":10}}}
-              ]
             },
             {"name":"enter","region":{"x1":29,"y1":15,"x2":32,"y2":16},"player":"BadGuy",
                 "action":"add","items":[
