@@ -5,7 +5,7 @@
     "player":"BadGuy",
     "cash" :{
         "GoodGuy":0,
-        "BadGuy":1500
+        "BadGuy":0
     },
     "videos" : {
       "briefing":"nod/nod1"
@@ -71,13 +71,12 @@
     },
     "requirements":{
         "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10"],
-        "buildings":["civilian-building-20","civilian-building-21","civilian-building-22","civilian-building-23","civilian-building-24","civilian-building-25","civilian-building-26","civilian-building-27","civilian-building-30","power-plant","hand-of-nod"],
+        "buildings":["civilian-building-20","civilian-building-21","civilian-building-22","civilian-building-23","civilian-building-24","civilian-building-25","civilian-building-26","civilian-building-27","civilian-building-30"],
         "turrets":[],
         "vehicles":["buggy","jeep"],
         "trees":["desert-tree-08","desert-tree-18"]
     },
     "buildable":{
-        "infantry":["minigunner"]
     },
     "starting":{
         "trees":[
@@ -369,32 +368,43 @@
           "uid":-1,
           "direction":4
         },
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":2,"y":3},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":2.5,"y":3},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":3,"y":2},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":3,"y":2.5},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":4,"y":3},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":4.5,"y":3},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":5,"y":3},
-            {"name":"minigunner","team":"nod","player":"BadGuy","x":5.5,"y":3.5}
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":30,"y":3},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":30.5,"y":3},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":30.5,"y":3.5},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":30,"y":3.5},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":35,"y":3},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":34.5,"y":3},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":35,"y":3.5},
+            {"name":"minigunner","team":"nod","player":"BadGuy","x":34.5,"y":3.5}
             ],
         "vehicles":[
-            {"name":"jeep","team":"gdi","player":"GoodGuy","x":32,"y":2.5,"direction":16},
-            {"name":"jeep","team":"gdi","player":"GoodGuy","x":33,"y":2.5,"direction":16},
-            {"name":"jeep","team":"gdi","player":"GoodGuy","x":32,"y":3.5,"direction":16}
+            {"name":"buggy","team":"nod","player":"BadGuy","x":32,"y":2.5,"direction":16},
+            {"name":"buggy","team":"nod","player":"BadGuy","x":33,"y":2.5,"direction":16},
+            {"name":"jeep","team":"gdi","player":"GoodGuy","x":3,"y":3,"direction":16}
         ],
         "buildings":[
-            {"name":"hand-of-nod","team":"nod","player":"BadGuy","x":0,"y":2},
+            {"name":"civilian-building-25","player":"Neutral","x":8,"y":7},
+            {"name":"civilian-building-21","player":"Neutral","x":8,"y":9},
+            {"name":"civilian-building-24","player":"Neutral","x":0,"y":2},
+            {"name":"civilian-building-24","player":"Neutral","x":0,"y":9},
+            {"name":"civilian-building-26","player":"Neutral","x":1,"y":9},
             {"name":"civilian-building-26","player":"Neutral","x":0,"y":7},
             {"name":"civilian-building-26","player":"Neutral","x":5,"y":7}
             ],
         "turrets":[],
         "ships":[],
         "triggers":[
-            {"name":"condition","condition":"(game.count(\"vehicles\",\"GoodGuy\")==0 && game.count(\"infantry\",\"GoodGuy\") == 0)",
+            {"name":"condition","condition":"(game.count(\"infantry\",\"Neutral\",-1) == 0)",
              "action":"success"},
             {"name":"condition","condition":"(game.count(\"vehicles\",\"BadGuy\")==0 && game.count(\"infantry\",\"BadGuy\") == 0)",
              "action":"failure"},
+             {"name":"condition","condition":"(game.count(\"infantry\",\"GoodGuy\",-2)==0 && game.count(\"infantry\",\"GoodGuy\",-3)==0 && game.count(\"infantry\",\"GoodGuy\",-4)==0)",
+              "action":"hunt","player":"GoodGuy"},
+            {"name":"enter","region":{"x1":26,"y1":10,"x2":28,"y2":14},"player":"BadGuy",
+                "action":"add","items":[
+                  {"name":"minigunner","team":"gdi","player":"GoodGuy","type":"infantry","x":31.5,"y":25,"orders":{"type":"hunt","to":{"x":31,"y":15},"from":{"x":26,"y":10}}},
+                  {"name":"minigunner","team":"gdi","player":"GoodGuy","type":"infantry","x":32,"y":25,"orders":{"type":"hunt","to":{"x":32,"y":15},"from":{"x":26,"y":10}}}
+              ]
             },
             {"name":"enter","region":{"x1":29,"y1":15,"x2":32,"y2":16},"player":"BadGuy",
                 "action":"add","items":[
