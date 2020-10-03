@@ -77,7 +77,7 @@
         "trees":["desert-tree-08","desert-tree-18"]
     },
     "buildable":{
-        "infantry":["minigunner","rocket-soldier"]
+        "infantry":["minigunner","bazooka"]
     },
     "starting":{
         "trees":[
