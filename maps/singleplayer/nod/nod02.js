@@ -5,7 +5,7 @@
     "player":"BadGuy",
     "cash" :{
         "GoodGuy":0,
-        "BadGuy":0
+        "BadGuy":1500
     },
     "videos" : {
       "briefing":"nod/nod1"
@@ -70,7 +70,7 @@
         ]
     },
     "requirements":{
-        "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10"],
+        "infantry":["minigunner","civilian-1","civilian-3","civilian-4","civilian-5","civilian-6","civilian-7","civilian-8","civilian-9","civilian-10","bazooka"],
         "buildings":["civilian-building-20","civilian-building-21","civilian-building-22","civilian-building-23","civilian-building-24","civilian-building-25","civilian-building-26","civilian-building-27","civilian-building-30"],
         "turrets":[],
         "vehicles":["buggy","jeep"],
@@ -415,10 +415,10 @@
               ]
             },
             {"name":"timed","time":2,"action":"add","items":[
-                  {"name":"minigunner","team":"nod","player":"BadGuy","type":"infantry","x":31,"y":0.5,"orders":{"type":"move","to":{"x":31,"y":2.5}}},
-                  {"name":"minigunner","team":"nod","player":"BadGuy","type":"infantry","x":31.5,"y":0.5,"orders":{"type":"move","to":{"x":31.5,"y":2.5}}},
-                  {"name":"minigunner","team":"nod","player":"BadGuy","type":"infantry","x":31,"y":0,"orders":{"type":"move","to":{"x":31,"y":2}}},
-                  {"name":"minigunner","team":"nod","player":"BadGuy","type":"infantry","x":31.5,"y":0,"orders":{"type":"move","to":{"x":31.5,"y":2}}}
+                  {"name":"bazooka","team":"nod","player":"BadGuy","type":"infantry","x":31,"y":0.5,"orders":{"type":"move","to":{"x":31,"y":2.5}}},
+                  {"name":"bazooka","team":"nod","player":"BadGuy","type":"infantry","x":31.5,"y":0.5,"orders":{"type":"move","to":{"x":31.5,"y":2.5}}},
+                  {"name":"bazooka","team":"nod","player":"BadGuy","type":"infantry","x":31,"y":0,"orders":{"type":"move","to":{"x":31,"y":2}}},
+                  {"name":"bazooka","team":"nod","player":"BadGuy","type":"infantry","x":31.5,"y":0,"orders":{"type":"move","to":{"x":31.5,"y":2}}}
               ],"reinforcements":true
             },
             {"name":"timed","time":4,"action":"add","items":[
