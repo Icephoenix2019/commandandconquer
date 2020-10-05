@@ -6166,7 +6166,7 @@ var infantry = {
   }
 }
 var maps = {
-  gdi: ['scg01ea', 'scg02ea', 'scg03ea'],
+  gdi: ['scg02ea', 'scg01ea'],
   nod: ['nod02', 'scb01ea'],
   multiplayer: ['green-acres', 'sand-trap', 'lost-arena', 'river-raid', 'eye-of-the-storm'],
   load: function (mapName, onloadEventHandler, savedGame) {
