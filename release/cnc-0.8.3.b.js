@@ -4167,6 +4167,101 @@ var infantry = {
         spriteCount: 144
       }]
     },
+    sniper: {
+      name: 'sniper',
+      label: 'Sniper',
+      speed: 4,
+      primaryWeapon: 'sniper2',
+      cost: 200,
+      sight: 2,
+      hitPoints: 50,
+      spriteSheet: undefined,
+      directions: 8,
+      dependency: ['barracks|hand-of-nod'],
+      constructedIn: ['barracks', 'hand-of-nod'],
+      owner: 'both',
+      spriteImages: [{
+        name: 'stand',
+        count: 8
+      }, {
+        name: 'guard',
+        count: 8
+      }, {
+        name: 'run',
+        count: 6,
+        direction: true
+      }, {
+        name: 'fire',
+        count: 8,
+        direction: true
+      }, {
+        name: 'down',
+        count: 2,
+        direction: true
+      }, {
+        name: 'prone-move',
+        count: 4,
+        direction: true
+      }, {
+        name: 'up',
+        count: 2,
+        direction: true
+      }, {
+        name: 'prone-fire',
+        count: 8,
+        totalCount: 8,
+        direction: true
+      }, {
+        name: 'idle-1',
+        count: 16
+      }, {
+        name: 'idle-2',
+        count: 16
+      }, {
+        name: 'fist-combat-left',
+        count: 47
+      }, {
+        name: 'fist-combat-right',
+        count: 47
+      }, {
+        name: 'die-normal',
+        count: 8
+      }, {
+        name: 'die-frag',
+        count: 8
+      }, {
+        name: 'die-explode-close',
+        count: 8
+      }, {
+        name: 'die-explode-far',
+        count: 12
+      }, {
+        name: 'die-fire',
+        count: 18
+      }, {
+        name: 'wave',
+        count: 3,
+        direction: true
+      }, {
+        name: 'greet',
+        count: 3,
+        direction: true
+      }, {
+        name: 'salute',
+        count: 3,
+        direction: true
+      }, {
+        name: 'bow',
+        count: 3,
+        direction: true
+      }, {
+        name: 'prone',
+        count: 1,
+        totalCount: 4,
+        direction: true,
+        spriteCount: 144
+      }]
+    },
     grenadier: {
       name: 'grenadier',
       label: 'Grenadier',
@@ -13575,6 +13670,16 @@ var weapons = {
       range: 5.5,
       sound: 'ramgun2'
     },
+
+    sniper2: {
+      name: 'sniper2',
+      damage: 60,
+      projectile: 'invisiblesniper',
+      rateOfFire: 40,
+      range: 5.5,
+      sound: 'ramgun2'
+    },
+
     chaingun: {
       name: 'chaingun',
       projectile: 'invisibleheavy',
