@@ -11,7 +11,7 @@
     "videos" : {
       "briefing":"gdi/gdi1"
     },
-    "height":24,
+    "height":27,
     "width":27,
     "y":3,
     "x":0,
