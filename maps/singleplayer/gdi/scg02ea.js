@@ -178,9 +178,9 @@
            "direction":5
          },
 
-        {"name":"minigunner","team":"nod","player":"BadGuy","x":1,"y":2,"orders":{"type":"hunt"}},
-        {"name":"minigunner","team":"nod","player":"BadGuy","x":2,"y":3,"orders":{"type":"hunt"}},
-        {"name":"minigunner","team":"nod","player":"BadGuy","x":3,"y":2,"orders":{"type":"hunt"}},
+        {"name":"sniper","team":"gdi","player":"GoodGuy","x":22.75,"y":18,"direction":0,"orders":{"type":"guard"}},
+        {"name":"sniper","team":"gdi","player":"GoodGuy","x":22.25,"y":18.5,"direction":0,"orders":{"type":"guard"}},
+ 
 
         {"name":"minigunner","team":"gdi","player":"GoodGuy","x":22.75,"y":16,"direction":0,"orders":{"type":"guard"}},
         {"name":"minigunner","team":"gdi","player":"GoodGuy","x":22.75,"y":16.5,"direction":0,"orders":{"type":"guard"}},
