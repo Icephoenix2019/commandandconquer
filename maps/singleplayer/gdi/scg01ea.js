@@ -44,7 +44,7 @@
         ]
     },
     "requirements":{
-        "infantry":["minigunner"],
+        "infantry":["minigunner","sniper"],
         "ships":["gunboat","hovercraft"],
         "vehicles":["mcv","jeep","buggy"],
         "turrets":["gun-turret"],
@@ -53,7 +53,7 @@
         "trees":["tree-01","tree-02","tree-05","tree-06","tree-07","tree-16","tree-17","tree-cluster-01","tree-cluster-02","tree-cluster-04","tree-cluster-05"]
     },
     "buildable":{
-        "infantry":["minigunner"],
+        "infantry":["minigunner","sniper"],
         "buildings":["power-plant","barracks"]
     },
     "starting":{
