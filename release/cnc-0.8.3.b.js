@@ -4179,7 +4179,7 @@ var infantry = {
       directions: 8,
       dependency: ['barracks|hand-of-nod'],
       constructedIn: ['barracks', 'hand-of-nod'],
-      owner: 'both',
+      owner: 'gdi',
       spriteImages: [{
         name: 'stand',
         count: 8
@@ -9086,7 +9086,7 @@ var sidebar = {
   },
   init: function () {
     this.visible = false
-    var iconSpriteList = ['advanced-communications-tower', 'advanced-guard-tower', 'advanced-power-plant', 'air-strike', 'airstrip', 'apache', 'apc', 'artillery', 'barb-wire', 'barracks', 'chain-link', 'chem-warrior', 'commando', 'communications-center', 'concrete-wall', 'engineer', 'flame-tank', 'flame-thrower', 'grenadier', 'guard-tower', 'gunboat', 'hand-of-nod', 'harvester', 'helipad', 'hover-craft', 'ion-cannon', 'jeep', 'light-tank', 'mammoth-tank', 'mcv', 'medium-tank', 'minigunner', 'mobile-rocket-launch-system', 'buggy', 'nuclear-strike', 'obelisk', 'orca', 'power-plant', 'recon-bike', 'refinery', 'repair-facility', 'bazooka', 'sam-site', 'sandbag', 'ssm-launcher', 'stealth-tank', 'air-strike', 'temple-of-nod', 'tiberium-silo', 'chinook', 'gun-turret', 'weapons-factory', 'wooden-fence']
+    var iconSpriteList = ['advanced-communications-tower', 'advanced-guard-tower', 'advanced-power-plant', 'air-strike', 'airstrip', 'apache', 'apc', 'artillery', 'barb-wire', 'barracks', 'chain-link', 'chem-warrior', 'commando', 'communications-center', 'concrete-wall', 'engineer', 'flame-tank', 'flame-thrower', 'grenadier', 'guard-tower', 'gunboat', 'hand-of-nod', 'harvester', 'helipad', 'hover-craft', 'ion-cannon', 'jeep', 'light-tank', 'mammoth-tank', 'mcv', 'medium-tank', 'minigunner', 'mobile-rocket-launch-system', 'buggy', 'nuclear-strike', 'obelisk', 'orca', 'power-plant', 'recon-bike', 'refinery', 'repair-facility', 'bazooka', 'sam-site', 'sandbag', 'ssm-launcher', 'stealth-tank', 'air-strike', 'temple-of-nod', 'tiberium-silo', 'chinook', 'gun-turret', 'weapons-factory', 'wooden-fence','sniper']
     var iconSprites = []
     for (var i = 0; i < iconSpriteList.length; i++) {
       iconSprites[iconSpriteList[i]] = {
