@@ -5,7 +5,7 @@
     "team":"gdi",
     "player":"GoodGuy",
     "cash" :{
-        "GoodGuy":2000,
+        "GoodGuy":0,
         "BadGuy":0
     },
     "videos" : {
@@ -13,7 +13,7 @@
     },
     "height":16,
     "width":32,
-    "y":0,
+    "y":3,
     "x":0,
     "theater":"temperate",
     "terrain":{
@@ -24,7 +24,7 @@
     },
     "requirements":{
         "infantry":["minigunner","sniper"],
-        "vehicles":["mcv","jeep","buggy"],
+        "vehicles":["jeep","buggy"],
         "turrets":["gun-turret"],
         "buildings":["construction-yard","power-plant","barracks"],
         "walls":["sandbag"],
