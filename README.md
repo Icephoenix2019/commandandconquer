@@ -16,6 +16,15 @@ https://jellehak.github.io/commandandconquer/
 - Add placeholder rocket soldier
 - Add placeholder Assualt Buggy for NOD
 
+# UPCOMING SUB FACTIONS:
+GDI:
+- Global Technology Group (GTG)
+- Military Defence Association (MDA)
+
+NOD:
+- Black Hand (BH)
+- Chemical Weapons of the Brotherhood (CWB)
+
 # Install
 Just run ```npm start``` for local development
 
