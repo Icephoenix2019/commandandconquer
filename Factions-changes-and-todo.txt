@@ -1,0 +1,23 @@
+GTG:
+  + Has great defensive abilities 
+  + Has Ultra Power Plant
+  + Has Railgun Turret
+  + Has Railgun Mammoth Tank
+  + Has Railgun Tank
+  + Has Railgun Trooper 
+  
+  - Railgun units/defences require power (If possible)
+  - Defences require large ammount of money
+  - Does not have sniper
+
+MDA
+  + Has Marine, which shoots grenades along with fire their rifle, they are vas
+  + Has Armored Medium Tank and Mammoth Tank
+  + Has Assualt Hum-vee, which shoots rockets and is equipped with a stronger minigun.
+  + Gaurd Tower Damage Up
+  + Sniper Damage and Speed up
+  + APC has more defence, has stronger minigun, and can carry more troops.
+  
+  - Does not have Grenader
+  - Units and Gaurd tower are expensive
+  
