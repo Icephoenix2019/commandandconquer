@@ -47,15 +47,14 @@
         "infantry":["minigunner","sniper","marine"],
         "ships":["gunboat","hovercraft"],
         "vehicles":["mcv","jeep","buggy"],
-        "turrets":["gun-turret","guard-tower"],
+        "turrets":["gun-turret"],
         "buildings":["construction-yard","power-plant","barracks"],
         "walls":["sandbag"],
         "trees":["tree-01","tree-02","tree-05","tree-06","tree-07","tree-16","tree-17","tree-cluster-01","tree-cluster-02","tree-cluster-04","tree-cluster-05"]
     },
     "buildable":{
         "infantry":["minigunner","sniper","marine"],
-        "buildings":["power-plant","barracks"],
-        "turrets":["guard-tower"]
+        "buildings":["power-plant","barracks"]
     },
     "starting":{
         "trees":[
@@ -285,6 +284,4 @@
                 }]
             }]
         }
-
-
 }
