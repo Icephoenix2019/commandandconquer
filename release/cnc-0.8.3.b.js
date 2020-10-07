@@ -11528,7 +11528,7 @@ var turrets = {
       selectOffsetY: 0,
       spriteImages: [{
         name: 'build',
-        count: 20
+        count: 0
       }, {
         name: 'damaged',
         count: 1
