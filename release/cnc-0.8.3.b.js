@@ -4262,7 +4262,7 @@ var infantry = {
         spriteCount: 144
       }]
     },
- marine: {
+      marine: {
       name: 'marine',
       label: 'Marine',
       speed: 4,
