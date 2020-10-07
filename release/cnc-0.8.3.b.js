@@ -4262,6 +4262,102 @@ var infantry = {
         spriteCount: 144
       }]
     },
+ marine: {
+      name: 'marine',
+      label: 'Marine',
+      speed: 4,
+      primaryWeapon: 'm64',
+      secondaryWeapon : 'grenade',
+      cost: 300,
+      sight: 2,
+      hitPoints: 50,
+      spriteSheet: undefined,
+      directions: 8,
+      dependency: ['barracks|hand-of-nod'],
+      constructedIn: ['barracks', 'hand-of-nod'],
+      owner: 'gdi',
+      spriteImages: [{
+        name: 'stand',
+        count: 8
+      }, {
+        name: 'guard',
+        count: 8
+      }, {
+        name: 'run',
+        count: 6,
+        direction: true
+      }, {
+        name: 'fire',
+        count: 8,
+        direction: true
+      }, {
+        name: 'down',
+        count: 2,
+        direction: true
+      }, {
+        name: 'prone-move',
+        count: 4,
+        direction: true
+      }, {
+        name: 'up',
+        count: 2,
+        direction: true
+      }, {
+        name: 'prone-fire',
+        count: 8,
+        totalCount: 8,
+        direction: true
+      }, {
+        name: 'idle-1',
+        count: 16
+      }, {
+        name: 'idle-2',
+        count: 16
+      }, {
+        name: 'fist-combat-left',
+        count: 47
+      }, {
+        name: 'fist-combat-right',
+        count: 47
+      }, {
+        name: 'die-normal',
+        count: 8
+      }, {
+        name: 'die-frag',
+        count: 8
+      }, {
+        name: 'die-explode-close',
+        count: 8
+      }, {
+        name: 'die-explode-far',
+        count: 12
+      }, {
+        name: 'die-fire',
+        count: 18
+      }, {
+        name: 'wave',
+        count: 3,
+        direction: true
+      }, {
+        name: 'greet',
+        count: 3,
+        direction: true
+      }, {
+        name: 'salute',
+        count: 3,
+        direction: true
+      }, {
+        name: 'bow',
+        count: 3,
+        direction: true
+      }, {
+        name: 'prone',
+        count: 1,
+        totalCount: 4,
+        direction: true,
+        spriteCount: 144
+      }]
+    },
     grenadier: {
       name: 'grenadier',
       label: 'Grenadier',
@@ -13720,6 +13816,31 @@ var weapons = {
       projectile: 'invisible',
       rateOfFire: 20,
       range: 2,
+      sound: 'mgun2',
+      muzzleFlash: undefined,
+      fire: function (from, direction, target) {
+        from.firing = true
+        this.cooldown = this.rateOfFire
+        game.add({
+          type: 'bullets',
+          name: this.projectile,
+          x: from.x,
+          y: from.y,
+          direction: direction,
+          directions: from.directions,
+          target: target,
+          weapon: this,
+          from: from.player
+        })
+        sounds.play(this.sound)
+      }
+    },
+    m64: {
+      name: 'm64',
+      damage: 10,
+      projectile: 'invisible',
+      rateOfFire: 15,
+      range: 3,
       sound: 'mgun2',
       muzzleFlash: undefined,
       fire: function (from, direction, target) {
