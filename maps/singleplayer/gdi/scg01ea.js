@@ -5,7 +5,7 @@
     "team":"gdi",
     "player":"GoodGuy",
     "cash" :{
-        "GoodGuy":2000,
+        "GoodGuy":9000,
         "BadGuy":0
     },
     "videos" : {
