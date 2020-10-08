@@ -14,7 +14,7 @@
 		"Neutral":""
 	},
     "videos" : {
-      "briefing":"gdi/gdi4"
+      "briefing":"gdi/gdi1"
     },		
 	"cash":{
 		"GoodGuy":0,
