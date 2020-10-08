@@ -1,20 +1,18 @@
-Rebuild of command and conquer to be able to play on real maps
-
-https://jellehak.github.io/commandandconquer/
+A command and conquer clone with more units! :D
 
 # Goals
 - Add more units, hopefully finish it
 - Add more sub-factions
 - Make more missions
 
-# UPDATE OCT 5, 2020
-- Added placeholder sniper (for gdi) and light tank (for nod)
-- Added Nod mission 02 (WIP)
+# UPDATE OCT 7, 2020
+- Added Rocket Solder & Grenadier & Engineer sprites
+- Fixed some unit issues
 
 # UPCOMING
-- Add placeholder Marine for GDI
-- Add placeholder rocket soldier
 - Add placeholder Assualt Buggy for NOD
+- Add lots more sprites
+- New mission? 
 
 # UPCOMING SUB FACTIONS:
 GDI:
@@ -24,11 +22,6 @@ GDI:
 NOD:
 - Black Hand (BH)
 - Chemical Weapons of the Brotherhood (CWB)
-
-# Install
-Just run ```npm start``` for local development
-
-If you add or change scripts run ```gulp index```
 
 # Based on
 Demo https://www.adityaravishankar.com/projects/games/command-and-conquer/
