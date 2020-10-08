@@ -4265,7 +4265,7 @@ var infantry = {
       marine: {
       name: 'marine',
       label: 'Marine',
-      speed: 1,
+      speed: 15,
       primaryWeapon: 'm64',
       secondaryWeapon : 'grenade',
       cost: 300,
