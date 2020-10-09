@@ -2651,6 +2651,8 @@ var colors = [
 var palettes = {
   gdi: [176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191],
   nod: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
+  allies: [2, 119, 118, 135, 136, 138, 112, 12, 118, 135, 136, 137, 138, 139, 114, 112],
+  soviets: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
   yellow: [176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191],
   red: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
   teal: [2, 119, 118, 135, 136, 138, 112, 12, 118, 135, 136, 137, 138, 139, 114, 112],
@@ -6016,6 +6018,8 @@ var infantry = {
                   this.moveToDestination()
                 } else {
                   if (this.orders.to.team == 'gdi') {
+                    sounds.play('gdi_building_captured')
+                  if (this.orders.to.team == 'allies') {
                     sounds.play('gdi_building_captured')
                   } else {
                     sounds.play('nod_building_captured')
@@ -10445,13 +10449,23 @@ var singleplayer = {
         color: 'red',
         team: 'nod'
       },
+      GoodGuyA: {
+        index: 2,
+        color: 'teal',
+        team: 'allies'
+      },
+      BadGuyS: {
+        index: 3,
+        color: 'red',
+        team: 'soviets'
+      },
       Neutral: {
         index: 0,
         color: 'yellow',
         team: 'civilian'
       }
     }
-    game.players = ['GoodGuy', 'BadGuy', 'Neutral']
+    game.players = ['GoodGuy', 'BadGuy', 'Neutral', 'GoodGuyA', 'BadGuyS']
     game.kills = []
     game.deaths = []
     for (var i = game.players.length - 1; i >= 0; i--) {
