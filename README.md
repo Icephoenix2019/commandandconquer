@@ -5,9 +5,8 @@ A command and conquer clone with more units! :D
 - Add more sub-factions
 - Make more missions
 
-# UPDATE OCT 7, 2020
-- Added Rocket Solder & Grenadier & Engineer sprites
-- Fixed some unit issues
+# UPDATE OCT 9, 2020
+- Testing Allies and Soviets, they should be added along with the other 2 factions.
 
 # UPCOMING
 - Add placeholder Assualt Buggy for NOD
