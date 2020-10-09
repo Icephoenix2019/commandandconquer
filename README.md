@@ -23,6 +23,14 @@ NOD:
 - Black Hand (BH)
 - Chemical Weapons of the Brotherhood (CWB)
 
+Allies:
+- United Airforce Association (UAA)
+- Future Tech (FT)
+
+Soviets:
+- Mother Russian Arsenal (MRA)
+- Nuclear Weapons of Russia (NWR)
+
 # Based on
 Demo https://www.adityaravishankar.com/projects/games/command-and-conquer/
 Code https://github.com/adityaravishankar/command-and-conquer
