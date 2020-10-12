@@ -9183,6 +9183,8 @@ var sidebar = {
     this.missionFailed = loader.loadImage('images/sidebar/mission-failed.png')
     this.replayMenuImage = loader.loadImage('images/menu/replay-controls-menu.png')
     this.nodRadar = loader.loadImage('images/sidebar/nod-radar.png')
+    this.alliesRadar = loader.loadImage('images/sidebar/allies-radar.png')
+    this.sovietRadar = loader.loadImage('images/sidebar/soviet-radar.png')
   },
   init: function () {
     this.visible = false
@@ -9490,6 +9492,12 @@ var sidebar = {
     if (!sidebar.mapEnabled) {
       if (game.type === 'multiplayer') {
         game.foregroundContext.drawImage(this.mapCanvas, this.left + 6, this.top + 5)
+      } else if (game.team === 'allies') {
+        game.foregroundContext.drawImage(this.alliesRadar, this.left, this.top)
+      }
+      } else if (game.team === 'soviets') {
+        game.foregroundContext.drawImage(this.sovietRadar, this.left, this.top)
+      }
       } else if (game.team === 'nod') {
         game.foregroundContext.drawImage(this.nodRadar, this.left, this.top)
       }
