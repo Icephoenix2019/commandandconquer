@@ -2651,8 +2651,6 @@ var colors = [
 var palettes = {
   gdi: [176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191],
   nod: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
-  allies: [2, 119, 118, 135, 136, 138, 112, 12, 118, 135, 136, 137, 138, 139, 114, 112],
-  soviets: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
   yellow: [176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191],
   red: [127, 126, 125, 124, 122, 46, 120, 47, 125, 124, 123, 122, 42, 121, 120, 120],
   teal: [2, 119, 118, 135, 136, 138, 112, 12, 118, 135, 136, 137, 138, 139, 114, 112],
@@ -6019,8 +6017,6 @@ var infantry = {
                 } else {
                   if (this.orders.to.team == 'gdi') {
                     sounds.play('gdi_building_captured')
-                  if (this.orders.to.team == 'allies') {
-                    sounds.play('gdi_building_captured')
                   } else {
                     sounds.play('nod_building_captured')
                   }
@@ -9183,8 +9179,6 @@ var sidebar = {
     this.missionFailed = loader.loadImage('images/sidebar/mission-failed.png')
     this.replayMenuImage = loader.loadImage('images/menu/replay-controls-menu.png')
     this.nodRadar = loader.loadImage('images/sidebar/nod-radar.png')
-    this.alliesRadar = loader.loadImage('images/sidebar/allies-radar.png')
-    this.sovietRadar = loader.loadImage('images/sidebar/soviet-radar.png')
   },
   init: function () {
     this.visible = false
@@ -9492,11 +9486,6 @@ var sidebar = {
     if (!sidebar.mapEnabled) {
       if (game.type === 'multiplayer') {
         game.foregroundContext.drawImage(this.mapCanvas, this.left + 6, this.top + 5)
-      } else if (game.team === 'allies') {
-        game.foregroundContext.drawImage(this.alliesRadar, this.left, this.top)
-      }
-      } else if (game.team === 'soviets') {
-        game.foregroundContext.drawImage(this.sovietRadar, this.left, this.top)
       }
       } else if (game.team === 'nod') {
         game.foregroundContext.drawImage(this.nodRadar, this.left, this.top)
@@ -10456,16 +10445,6 @@ var singleplayer = {
         index: 1,
         color: 'red',
         team: 'nod'
-      },
-      GoodGuyA: {
-        index: 2,
-        color: 'teal',
-        team: 'allies'
-      },
-      BadGuyS: {
-        index: 3,
-        color: 'red',
-        team: 'soviets'
       },
       Neutral: {
         index: 0,
