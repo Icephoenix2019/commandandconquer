@@ -9486,7 +9486,6 @@ var sidebar = {
     if (!sidebar.mapEnabled) {
       if (game.type === 'multiplayer') {
         game.foregroundContext.drawImage(this.mapCanvas, this.left + 6, this.top + 5)
-      }
       } else if (game.team === 'nod') {
         game.foregroundContext.drawImage(this.nodRadar, this.left, this.top)
       }
@@ -10452,7 +10451,7 @@ var singleplayer = {
         team: 'civilian'
       }
     }
-    game.players = ['GoodGuy', 'BadGuy', 'Neutral', 'GoodGuyA', 'BadGuyS']
+    game.players = ['GoodGuy', 'BadGuy', 'Neutral']
     game.kills = []
     game.deaths = []
     for (var i = game.players.length - 1; i >= 0; i--) {
