@@ -13,7 +13,7 @@
     },
     "height":16,
     "width":32,
-    "y":3,
+    "y":0,
     "x":0,
     "theater":"temperate",
     "terrain":{
