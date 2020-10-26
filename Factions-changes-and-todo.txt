@@ -1,4 +1,4 @@
-GTG:
+GTG: (global technology group)
   + Has great defensive abilities 
   + Has Ultra Power Plant
   + Has Railgun Turret
@@ -10,8 +10,8 @@ GTG:
   - Defences require large ammount of money
   - Does not have sniper
 
-MDA
-  + Has Marine, which shoots grenades along with fire their rifle, they are vas
+MDA (military defence assoication)
+  + Has Marine, which shoots grenades along with fire their rifle
   + Has Armored Medium Tank and Mammoth Tank
   + Has Assualt Hum-vee, which shoots rockets and is equipped with a stronger minigun.
   + Gaurd Tower Damage Up
@@ -21,3 +21,11 @@ MDA
   - Does not have Grenader
   - Units and Gaurd tower are expensive
   
+SON (Scavengers of NOD)
+  + Has oil derrick which produces +$5
+  + Vehicles are more cheaper
+  + Has renegades which are like mini-commandos and only require a comms. center
+  
+  - No APC, stealth tank, or SMM launcher
+  - Vehicles are weaker
+  - No Temple of Nod, no commando, no obolisk, and no super weapon.
